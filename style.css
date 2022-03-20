@@ -1,4 +1,4 @@
-/*1º - Imports*/
+/*1º - Imports -------------------------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap');
 /* 2º - Resets CSS*/
 * {
@@ -15,7 +15,7 @@ img {
     width: 100%;
     height: auto;
 }
-/* 3º Variables */
+/* 3º Variables -------------------------------------------------------------------------------*/
 :root {
     --header-height: 4.5rem;
   
@@ -29,8 +29,8 @@ img {
     --text-color: hsl(0 0% 46%);
     --text-color-light: hsl(0 0% 98%);
     --body-color: hsl(0 0% 98%);
-  }
-
+}
+/*BASE -------------------------------------------------------------------------------*/
 body {
     font: 400 1rem 'DM Sans', sans-serif;
     color: var(--text-color);
@@ -44,54 +44,6 @@ h1 {
     -webkit-font-smoothing: auto;
 }
 
-
-.logo {
-  font: 700 1.31rem 'Poppins', sans-serif;
-  color: var(--title-color);
-}
-a span {
-    color: var(--base-color);
-}
-
-.container, .text {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-}
-
-.text {
-    text-align: center;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: var(--header-height);
-}
-
-#header {
-    margin-bottom: 2rem;
-}
-
-
-#home {
-    overflow: hidden;
-}
-
-#home .text {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    align-items: center;
-}
-
-#home .text h1 {
-    margin-bottom: 1.4rem;
-}
-
-#home .text p {
-    margin-bottom: 2rem;
-}
-
 .button {
     background: var(--base-color);
     color: var(--text-color-light);
@@ -102,8 +54,117 @@ nav {
     border-radius: 0.25rem;
     font: 500 1rem 'DM Sans', sans-serif;
     transition: background 0.3s;
-  }
+}
 
-.button:hover {
+  .button:hover {
     background: var(--base-color-alt);
+}
+
+.divider-1 {
+    height: 1px;
+    background: linear-gradient(270deg,
+    hsla(var(--hue), 36%, 57%, 1) 0%,
+    hsla(var(--hue), 65%, 88%, 0.34) 100%);
+}
+
+/*LAYOUT -------------------------------------------------------------------------------*/
+
+.container {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+  
+.grid {
+    display: grid;
+    gap: 2rem;
+}
+  
+.section {
+    padding: 5rem 0;
+}
+  
+#header {
+    border-bottom: 1px solid #e4e4e4;
+    margin-bottom: 2rem;
+    display: flex;
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: var(--body-color);
+    width: 100%;
+}
+  
+nav {
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+  
+.logo {
+    font: 700 1.31rem 'Poppins', sans-serif;
+    color: var(--title-color);
+}
+  
+.logo span {
+    color: var(--base-color);
+}
+  
+main {
+    margin-top: var(--header-height);
+}
+  
+/*HOME -------------------------------------------------------------------------------*/
+
+#home {
+    overflow: hidden;
+}
+
+#home .container {
+    margin: 0;
+}
+
+#home .image {
+    position: relative;
+}
+
+/*Cria elemento no HTML*/
+
+#home .image::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: var(--base-color-second);
+    position: absolute;
+    top: -16.8%;
+    left: -16.7;
+    z-index: 0;
+}
+
+#home .image img {
+    position: relative;
+    right: 2.93rem;
+}
+
+#home .image img,
+#home .image::before{
+    border-radius: 0.25rem;
+}
+
+#home .text {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    text-align: center;
+
+}
+
+#home .text h1 {
+    margin-bottom: 1rem;
+}
+
+#home .text p {
+    margin-bottom: 2rem;
 }
