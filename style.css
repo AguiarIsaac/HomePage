@@ -20,7 +20,7 @@ img {
     --header-height: 4.5rem;
   
     /* colors */
-    --hue: 159;
+    --hue: 225;
     /* HSL color mode */
     --base-color: hsl(var(--hue) 36% 57%);
     --base-color-second: hsl(var(--hue) 65% 88%);
@@ -88,6 +88,8 @@ h1 {
     margin-bottom: 2rem;
     display: flex;
   
+    /*Fixa o navBar no topo da tela*/
+
     position: fixed;
     top: 0;
     left: 0;
