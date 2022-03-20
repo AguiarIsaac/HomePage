@@ -77,3 +77,33 @@ nav {
 #home {
     overflow: hidden;
 }
+
+#home .text {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    align-items: center;
+}
+
+#home .text h1 {
+    margin-bottom: 1.4rem;
+}
+
+#home .text p {
+    margin-bottom: 2rem;
+}
+
+.button {
+    background: var(--base-color);
+    color: var(--text-color-light);
+    display: inline-flex;
+    height: 3.5rem;
+    align-items: center;
+    padding: 0 2rem;
+    border-radius: 0.25rem;
+    font: 500 1rem 'DM Sans', sans-serif;
+    transition: background 0.3s;
+  }
+
+.button:hover {
+    background: var(--base-color-alt);
+}
