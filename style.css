@@ -8,6 +8,7 @@
 }
 a {
     text-decoration: none;
+    color: black;
 }
 
 img {
@@ -43,17 +44,34 @@ h1 {
     -webkit-font-smoothing: auto;
 }
 
-.container {
+
+.logo {
+  font: 700 1.31rem 'Poppins', sans-serif;
+  color: var(--title-color);
+}
+a span {
+    color: var(--base-color);
+}
+
+.container, .text {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+}
+
+.text {
+    text-align: center;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: var(--header-height);
 }
 
+#header {
+    margin-bottom: 2rem;
+}
 
 
 #home {
