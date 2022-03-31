@@ -153,7 +153,7 @@ nav ul li a:hover::after {
 .toggle {
     color: var(--base-color);
     font-size: 1.5rem;
-    cursor: pointer;               /*CRIAR LÓGICA DE ABRIR E FECHAR MENU*/
+    cursor: pointer;               
 }
 
 nav .icon-close {
@@ -259,4 +259,41 @@ nav.show .menu {
 
 #home .text p {
     margin-bottom: 2rem;
+}
+
+/*Abaut*/
+
+#about .container {
+    margin: 0;
+}
+
+#about .image {
+    position: relative;
+}
+
+/*Cria elemento no HTML*/
+
+#about .image::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: var(--base-color-second);
+    position: absolute;
+    top: -8.3%;
+    left: -33%;
+    z-index: 0;
+}
+
+#about .image img {
+    position: relative;
+}
+
+#about .image img,
+#about .image::before{
+    border-radius: 0.25rem;
+}
+
+#about .text {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
