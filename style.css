@@ -25,7 +25,7 @@ ul {
     --header-height: 4.5rem;
   
     /* colors */
-    --hue: 259;
+    --hue: 180;
     /* HSL color mode */
     --base-color: hsl(var(--hue) 36% 57%);
     --base-color-second: hsl(var(--hue) 65% 88%);
@@ -84,7 +84,6 @@ body {
         hsla(var(--hue),36%, 57%, 1)
         );
 }
-
 /*LAYOUT -------------------------------------------------------------------------------*/
 
 .container {
@@ -250,7 +249,10 @@ nav.show .menu {
 .logo span {
     color: var(--base-color);
 }
-  
+
+.logo-alt span{
+    color: var(--body-color);
+}
   
 /*HOME -------------------------------------------------------------------------------*/
 
@@ -455,4 +457,35 @@ nav.show .menu {
 
 #contact ul li i {
     color: var(--base-color);
+}
+
+/*Footer*/
+
+footer {
+    background: var(--base-color);
+}
+
+footer .logo {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+footer .brand p {
+    color: var(--text-color-light);
+    margin-bottom: 0.75rem;
+}
+
+footer i {
+    font-size: 1.5rem;
+    color: var(--text-color-light);
+}
+
+footer .social a {
+    margin-right: 2rem;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+footer .social a:hover {
+    transform: translateY(-15px);
 }
