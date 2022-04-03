@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Isaac Aguiar">
     <meta name="description" content="portfólio de Tamplates Web">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="assets/fonts/style.css">
     <title>Home Page</title>
@@ -112,56 +113,61 @@
                     <h2 class="title">Depoimentos de quem já passou por aqui</h2>
                 </header>
 
-                <div class="testimonials">
-                    <div class="testimonial">
-                        <blockquote>
-                            <p>
-                                <span>&ldquo;</span>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Blanditiis quia deserunt pariatur culpa! Cumque corruptfd
-                            </p>
+                <div class="testimonials swiper mySwiper">
 
-                            <cite>
-                                <img src="https://randomuser.me/api/portraits/women/24.jpg" alt="Foto de Sara Sousa">
-                                Sara Souza
-                            </cite>
-                        </blockquote>
+                    <div class="swiper-wrapper">
+
+                        <div class="testimonial swiper-slide">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                    Blanditiis quia deserunt pariatur culpa! Cumque corruptfd
+                                </p>
+    
+                                <cite>
+                                    <img src="https://randomuser.me/api/portraits/women/24.jpg" alt="Foto de Sara Sousa">
+                                    Sara Souza
+                                </cite>
+                            </blockquote>
+                        </div>
+                        
+                        <div class="testimonial swiper-slide">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                    Blanditiis quia deserunt pariatur culpa! Cumque corruptfd
+                                </p>
+    
+                                <cite>
+                                    <img src="https://randomuser.me/api/portraits/women/48.jpg" alt="foto de Souza Sara">
+                                    Souza Sara
+                                </cite>
+                            </blockquote>
+                        </div>
+    
+                        <div class="testimonial swiper-slide">
+                            <blockquote> 
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                    Blanditiis quia deserunt pariatur culpa! Cumque corruptfd
+                                </p>
+    
+                                <cite>
+                                    <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Foto de Jerry Smitch">
+                                    Jerry Smitch
+                                </cite>
+                            </blockquote>
+                        </div>
                     </div>
-                    
-                    <div class="testimonial">
-                        <blockquote>
-                            <p>
-                                <span>&ldquo;</span>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Blanditiis quia deserunt pariatur culpa! Cumque corruptfd
-                            </p>
-
-                            <cite>
-                                <img src="https://randomuser.me/api/portraits/women/48.jpg" alt="foto de Souza Sara">
-                                Souza Sara
-                            </cite>
-                        </blockquote>
-                    </div>
-
-                    <div class="testimonial">
-                        <blockquote> 
-                            <p>
-                                <span>&ldquo;</span>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Blanditiis quia deserunt pariatur culpa! Cumque corruptfd
-                            </p>
-
-                            <cite>
-                                <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Foto de Jerry Smitch">
-                                Jerry Smitch
-                            </cite>
-                        </blockquote>
-                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
     </main>
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

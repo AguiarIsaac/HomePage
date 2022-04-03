@@ -31,3 +31,11 @@ window.addEventListener('scroll', () => {
 		header.classList.remove('scroll')
 	}
 })
+
+// carrousel
+
+const swiper = new Swiper(".mySwiper", {
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
