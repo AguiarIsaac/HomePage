@@ -34,12 +34,17 @@ window.addEventListener('scroll', () => {
 
 // carrousel
 
-const swiper = new Swiper(".mySwiper", {
+const swiper = new Swiper(".swiper", {
     pagination: {
       el: ".swiper-pagination",
     },
+    breakpoints: {
+        // when window width is >= 767px
+        767: {
+          slidesPerView: 2
+        }
+    }
   });
-
   // scrollReveal
 
   const scrollReveal = ScrollReveal({

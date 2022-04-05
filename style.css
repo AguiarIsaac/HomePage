@@ -573,6 +573,43 @@ footer .social a:hover {
         grid-auto-flow: column;  /*parei o video em 42 min. (corrijir a tela home)*/
         margin: 0 auto;
     }
+
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .card {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    #testimonials .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #contact .container {
+        grid-auto-flow: column;
+        align-items: center;
+    }
+
+    #contact .text {
+        max-width: 25rem;
+    }
+
+    footer.contact {
+        padding: 3.75rem 0;
+    }
+
+    footer .container {
+        grid-auto-flow: column;
+        align-items: center;
+        justify-content:space-between;
+    }
+
+    footer .logo {
+        font-size: 1.5rem;
+    }
 }
 /* large devices: 1023 > */
 
